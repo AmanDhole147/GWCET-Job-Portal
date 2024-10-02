@@ -26,10 +26,10 @@ export function CategoryCarousel() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     return (
-        <Carousel className="w-full max-w-xl mx-auto my-20">
+        <Carousel className="w-full max-w-4xl mx-auto my-20">
             <CarouselContent>
                 {category.map((item, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
                         <div className="p-1">
                             <Button onClick={() => {
                                 dispatch(setSearchText(item));
